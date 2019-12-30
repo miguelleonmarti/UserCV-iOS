@@ -3,27 +3,45 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F2C91392B327320A2056BAB /* Pods_UserCV_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 854B6F16FE59B5F0EA593646 /* Pods_UserCV_iOS.framework */; };
 		FB3B7FBD23BA0948003F734B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3B7FBC23BA0948003F734B /* AppDelegate.swift */; };
 		FB3B7FBF23BA0948003F734B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3B7FBE23BA0948003F734B /* SceneDelegate.swift */; };
-		FB3B7FC123BA0948003F734B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3B7FC023BA0948003F734B /* ViewController.swift */; };
 		FB3B7FC423BA0948003F734B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3B7FC223BA0948003F734B /* Main.storyboard */; };
 		FB3B7FC623BA0949003F734B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB3B7FC523BA0949003F734B /* Assets.xcassets */; };
 		FB3B7FC923BA0949003F734B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3B7FC723BA0949003F734B /* LaunchScreen.storyboard */; };
+		FB3B7FD423BA0AE9003F734B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3B7FD323BA0AE9003F734B /* User.swift */; };
+		FB3B7FD623BA0C61003F734B /* Curriculum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3B7FD523BA0C60003F734B /* Curriculum.swift */; };
+		FB3B7FD823BA0DD8003F734B /* MasterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3B7FD723BA0DD8003F734B /* MasterModel.swift */; };
+		FB3B7FDA23BA10A7003F734B /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3B7FD923BA10A7003F734B /* DetailModel.swift */; };
+		FB3B7FDC23BA14C6003F734B /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3B7FDB23BA14C6003F734B /* MasterViewController.swift */; };
+		FB3B7FDE23BA14D5003F734B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3B7FDD23BA14D5003F734B /* DetailViewController.swift */; };
+		FB3B7FE023BA14EA003F734B /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3B7FDF23BA14EA003F734B /* AddUserViewController.swift */; };
+		FB4E1B2B23BAC10800151A7F /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4E1B2A23BAC10800151A7F /* Alert.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3DE31B20B0228BB27FD53AE2 /* Pods-UserCV-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UserCV-iOS.release.xcconfig"; path = "Target Support Files/Pods-UserCV-iOS/Pods-UserCV-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		854B6F16FE59B5F0EA593646 /* Pods_UserCV_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UserCV_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B81A1F49B19D622F913A19E6 /* Pods-UserCV-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UserCV-iOS.debug.xcconfig"; path = "Target Support Files/Pods-UserCV-iOS/Pods-UserCV-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		FB3B7FB923BA0948003F734B /* UserCV-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UserCV-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB3B7FBC23BA0948003F734B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FB3B7FBE23BA0948003F734B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FB3B7FC023BA0948003F734B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FB3B7FC323BA0948003F734B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FB3B7FC523BA0949003F734B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB3B7FC823BA0949003F734B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB3B7FCA23BA0949003F734B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB3B7FD323BA0AE9003F734B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FB3B7FD523BA0C60003F734B /* Curriculum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curriculum.swift; sourceTree = "<group>"; };
+		FB3B7FD723BA0DD8003F734B /* MasterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterModel.swift; sourceTree = "<group>"; };
+		FB3B7FD923BA10A7003F734B /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
+		FB3B7FDB23BA14C6003F734B /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		FB3B7FDD23BA14D5003F734B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FB3B7FDF23BA14EA003F734B /* AddUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUserViewController.swift; sourceTree = "<group>"; };
+		FB4E1B2A23BAC10800151A7F /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +49,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F2C91392B327320A2056BAB /* Pods_UserCV_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0DCCD9DA5BFF6EFA287B9C06 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B81A1F49B19D622F913A19E6 /* Pods-UserCV-iOS.debug.xcconfig */,
+				3DE31B20B0228BB27FD53AE2 /* Pods-UserCV-iOS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B5BEEACB6BAFCADF1313C1C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				854B6F16FE59B5F0EA593646 /* Pods_UserCV_iOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FB3B7FB023BA0947003F734B = {
 			isa = PBXGroup;
 			children = (
 				FB3B7FBB23BA0948003F734B /* UserCV-iOS */,
 				FB3B7FBA23BA0948003F734B /* Products */,
+				0DCCD9DA5BFF6EFA287B9C06 /* Pods */,
+				B5BEEACB6BAFCADF1313C1C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +94,54 @@
 		FB3B7FBB23BA0948003F734B /* UserCV-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				FB4E1B2923BAC0BD00151A7F /* Utils */,
+				FB3B7FD223BA0AB5003F734B /* Data */,
+				FB3B7FD123BA0A9D003F734B /* ViewControllers */,
+				FB3B7FD023BA0A95003F734B /* Models */,
 				FB3B7FBC23BA0948003F734B /* AppDelegate.swift */,
 				FB3B7FBE23BA0948003F734B /* SceneDelegate.swift */,
-				FB3B7FC023BA0948003F734B /* ViewController.swift */,
 				FB3B7FC223BA0948003F734B /* Main.storyboard */,
 				FB3B7FC523BA0949003F734B /* Assets.xcassets */,
 				FB3B7FC723BA0949003F734B /* LaunchScreen.storyboard */,
 				FB3B7FCA23BA0949003F734B /* Info.plist */,
 			);
 			path = "UserCV-iOS";
+			sourceTree = "<group>";
+		};
+		FB3B7FD023BA0A95003F734B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FB3B7FD723BA0DD8003F734B /* MasterModel.swift */,
+				FB3B7FD923BA10A7003F734B /* DetailModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FB3B7FD123BA0A9D003F734B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FB3B7FDB23BA14C6003F734B /* MasterViewController.swift */,
+				FB3B7FDD23BA14D5003F734B /* DetailViewController.swift */,
+				FB3B7FDF23BA14EA003F734B /* AddUserViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FB3B7FD223BA0AB5003F734B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FB3B7FD323BA0AE9003F734B /* User.swift */,
+				FB3B7FD523BA0C60003F734B /* Curriculum.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FB4E1B2923BAC0BD00151A7F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FB4E1B2A23BAC10800151A7F /* Alert.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FB3B7FCD23BA0949003F734B /* Build configuration list for PBXNativeTarget "UserCV-iOS" */;
 			buildPhases = (
+				5A35BE2A0B80B6E9F32E2021 /* [CP] Check Pods Manifest.lock */,
 				FB3B7FB523BA0947003F734B /* Sources */,
 				FB3B7FB623BA0947003F734B /* Frameworks */,
 				FB3B7FB723BA0947003F734B /* Resources */,
+				671ADFF399D9E76C34CEE866 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +212,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5A35BE2A0B80B6E9F32E2021 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UserCV-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		671ADFF399D9E76C34CEE866 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UserCV-iOS/Pods-UserCV-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UserCV-iOS/Pods-UserCV-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UserCV-iOS/Pods-UserCV-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FB3B7FB523BA0947003F734B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB3B7FC123BA0948003F734B /* ViewController.swift in Sources */,
+				FB3B7FD423BA0AE9003F734B /* User.swift in Sources */,
+				FB3B7FE023BA14EA003F734B /* AddUserViewController.swift in Sources */,
+				FB3B7FD823BA0DD8003F734B /* MasterModel.swift in Sources */,
+				FB3B7FDA23BA10A7003F734B /* DetailModel.swift in Sources */,
 				FB3B7FBD23BA0948003F734B /* AppDelegate.swift in Sources */,
 				FB3B7FBF23BA0948003F734B /* SceneDelegate.swift in Sources */,
+				FB3B7FDC23BA14C6003F734B /* MasterViewController.swift in Sources */,
+				FB3B7FD623BA0C61003F734B /* Curriculum.swift in Sources */,
+				FB4E1B2B23BAC10800151A7F /* Alert.swift in Sources */,
+				FB3B7FDE23BA14D5003F734B /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +410,7 @@
 		};
 		FB3B7FCE23BA0949003F734B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B81A1F49B19D622F913A19E6 /* Pods-UserCV-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +429,7 @@
 		};
 		FB3B7FCF23BA0949003F734B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DE31B20B0228BB27FD53AE2 /* Pods-UserCV-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
