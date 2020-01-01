@@ -29,8 +29,15 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = model.getNameAndSurname(indexPath.row)
-        cell.detailTextLabel?.text = "Age \(model.getAge(indexPath.row))"
+        if indexPath.row < model.getUsersCount() {
+            cell.textLabel?.text = model.getNameAndSurname(indexPath.row)
+            cell.detailTextLabel?.text = "Age: \(model.getAge(indexPath.row)) DNI: \(model.getDNI(indexPath.row))"
+            print("iP: " + String(indexPath.row))
+            print("countUsers: " + String(model.getUsersCount()))
+        } else {
+            // Handle non-existing object here
+        }
+        
         return cell
     }
     
@@ -39,9 +46,12 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
 
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        print("delete: " + String(indexPath.row))
         if(editingStyle == .delete) {
-            model.deleteUser(indexPath.row)
-            tableView.deleteRows(at: [indexPath], with: .fade)
+            self.model.deleteUser(indexPath.row)
+            self.tableView.beginUpdates()
+            self.tableView.deleteRows(at: [indexPath], with: .automatic)
+            self.tableView.endUpdates()
         }
     }
     

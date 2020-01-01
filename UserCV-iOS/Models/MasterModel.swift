@@ -32,6 +32,12 @@ class MasterModel {
         return "\(users[id].name) \(users[id].surname)"
     }
     
+    // Get user's dni
+    func getDNI(_ id: Int) -> String {
+        let users = realm.objects(User.self)
+        return users[id].dni
+    }
+    
     // Get user's job
     func getJob(_ id: Int) -> String {
         let users = realm.objects(User.self)
@@ -46,14 +52,11 @@ class MasterModel {
     
     // Delete user and its curriculum
     func deleteUser(_ id: Int) {
-        let curriculums = realm.objects(Curriculum.self)
         let users = realm.objects(User.self)
         
         let userToDelete = users[id]
-        let curriculumToDelete = curriculums[userToDelete.cv]
         
         try! realm.write {
-            realm.delete(curriculumToDelete)
             realm.delete(userToDelete)
         }
     }

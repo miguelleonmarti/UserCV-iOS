@@ -14,7 +14,6 @@
 		FB3B7FC623BA0949003F734B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB3B7FC523BA0949003F734B /* Assets.xcassets */; };
 		FB3B7FC923BA0949003F734B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3B7FC723BA0949003F734B /* LaunchScreen.storyboard */; };
 		FB3B7FD423BA0AE9003F734B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3B7FD323BA0AE9003F734B /* User.swift */; };
-		FB3B7FD623BA0C61003F734B /* Curriculum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3B7FD523BA0C60003F734B /* Curriculum.swift */; };
 		FB3B7FD823BA0DD8003F734B /* MasterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3B7FD723BA0DD8003F734B /* MasterModel.swift */; };
 		FB3B7FDA23BA10A7003F734B /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3B7FD923BA10A7003F734B /* DetailModel.swift */; };
 		FB3B7FDC23BA14C6003F734B /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3B7FDB23BA14C6003F734B /* MasterViewController.swift */; };
@@ -35,7 +34,6 @@
 		FB3B7FC823BA0949003F734B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB3B7FCA23BA0949003F734B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB3B7FD323BA0AE9003F734B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		FB3B7FD523BA0C60003F734B /* Curriculum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curriculum.swift; sourceTree = "<group>"; };
 		FB3B7FD723BA0DD8003F734B /* MasterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterModel.swift; sourceTree = "<group>"; };
 		FB3B7FD923BA10A7003F734B /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
 		FB3B7FDB23BA14C6003F734B /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -131,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				FB3B7FD323BA0AE9003F734B /* User.swift */,
-				FB3B7FD523BA0C60003F734B /* Curriculum.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -266,7 +263,6 @@
 				FB3B7FBD23BA0948003F734B /* AppDelegate.swift in Sources */,
 				FB3B7FBF23BA0948003F734B /* SceneDelegate.swift in Sources */,
 				FB3B7FDC23BA14C6003F734B /* MasterViewController.swift in Sources */,
-				FB3B7FD623BA0C61003F734B /* Curriculum.swift in Sources */,
 				FB4E1B2B23BAC10800151A7F /* Alert.swift in Sources */,
 				FB3B7FDE23BA14D5003F734B /* DetailViewController.swift in Sources */,
 			);
