@@ -55,6 +55,15 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "detail" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let destination = segue.destination as! DetailViewController
+                destination.user = self.model.getUser(indexPath.row)
+            }
+        }
+    }
+    
     
     /*
     // MARK: - Navigation

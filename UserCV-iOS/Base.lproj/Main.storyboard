@@ -42,6 +42,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="RmA-3a-ucX" kind="show" identifier="detail" id="pjB-ED-mwc"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -69,6 +72,96 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1042.0289855072465" y="136.60714285714286"/>
+        </scene>
+        <!--User detail-->
+        <scene sceneID="6Z9-7J-pic">
+            <objects>
+                <viewController id="RmA-3a-ucX" customClass="DetailViewController" customModule="UserCV_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4EK-w3-alb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uqd-9y-RH8">
+                                <rect key="frame" x="20" y="108" width="374" height="458"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ijb-ry-gph">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SXL-NB-Mzv">
+                                        <rect key="frame" x="0.0" y="46.5" width="374" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Surname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9J0-GE-nn4">
+                                        <rect key="frame" x="0.0" y="101.5" width="374" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mdo-EV-h7v">
+                                        <rect key="frame" x="0.0" y="156.5" width="374" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="DNI" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tfn-Kg-hrq">
+                                        <rect key="frame" x="0.0" y="211.5" width="374" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Job" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Sz-jR-qdS">
+                                        <rect key="frame" x="0.0" y="266.5" width="374" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curriculum Vitae" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8Y-l2-M59">
+                                        <rect key="frame" x="0.0" y="321.5" width="374" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hh4-2B-bGp">
+                                        <rect key="frame" x="0.0" y="368" width="374" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m83-hr-hbq">
+                                        <rect key="frame" x="0.0" y="423" width="374" height="35"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MPM-xp-BYa" firstAttribute="trailing" secondItem="uqd-9y-RH8" secondAttribute="trailing" constant="20" id="WJI-6M-Ezg"/>
+                            <constraint firstItem="uqd-9y-RH8" firstAttribute="leading" secondItem="MPM-xp-BYa" secondAttribute="leading" constant="20" id="dc5-hb-ywR"/>
+                            <constraint firstItem="uqd-9y-RH8" firstAttribute="top" secondItem="MPM-xp-BYa" secondAttribute="top" constant="20" id="td9-kg-Xta"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MPM-xp-BYa"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="User detail" id="3mN-oe-Age">
+                        <barButtonItem key="rightBarButtonItem" title="Update" id="1tb-LQ-i9A">
+                            <connections>
+                                <action selector="updateTapped:" destination="RmA-3a-ucX" id="47q-ok-oeF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="ageTextField" destination="mdo-EV-h7v" id="CaJ-RV-Ast"/>
+                        <outlet property="descriptionTextField" destination="m83-hr-hbq" id="aMp-y7-rVS"/>
+                        <outlet property="dniTextField" destination="tfn-Kg-hrq" id="LcX-3W-kV4"/>
+                        <outlet property="jobTextField" destination="2Sz-jR-qdS" id="TS3-fw-1Rd"/>
+                        <outlet property="nameTextField" destination="SXL-NB-Mzv" id="dMQ-k7-myn"/>
+                        <outlet property="surnameTextField" destination="9J0-GE-nn4" id="VxI-Sl-jQc"/>
+                        <outlet property="titleTextField" destination="hh4-2B-bGp" id="agk-TO-HNg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n6m-g6-ksX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1922" y="642"/>
         </scene>
         <!--New user-->
         <scene sceneID="zM7-Xj-yFU">
