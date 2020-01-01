@@ -32,8 +32,6 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         if indexPath.row < model.getUsersCount() {
             cell.textLabel?.text = model.getNameAndSurname(indexPath.row)
             cell.detailTextLabel?.text = "Age: \(model.getAge(indexPath.row)) DNI: \(model.getDNI(indexPath.row))"
-            print("iP: " + String(indexPath.row))
-            print("countUsers: " + String(model.getUsersCount()))
         } else {
             // Handle non-existing object here
         }
@@ -46,7 +44,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     }
 
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        print("delete: " + String(indexPath.row))
+        
         if(editingStyle == .delete) {
             self.model.deleteUser(indexPath.row)
             self.tableView.beginUpdates()
@@ -63,16 +61,5 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
             }
         }
     }
-    
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
