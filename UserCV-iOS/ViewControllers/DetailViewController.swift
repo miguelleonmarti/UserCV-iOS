@@ -20,8 +20,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var ageTextField: UITextField!
     @IBOutlet weak var dniTextField: UITextField!
     @IBOutlet weak var jobTextField: UITextField!
-    @IBOutlet weak var titleTextField: UITextField!
-    @IBOutlet weak var descriptionTextField: UITextField!
+    @IBOutlet weak var descriptionTextField: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +31,6 @@ class DetailViewController: UIViewController {
         self.ageTextField.text = String(self.user!.age)
         self.dniTextField.text = self.user?.dni
         self.jobTextField.text = self.user?.job
-        self.titleTextField.text = self.user?.title
         self.descriptionTextField.text = self.user?.cvDescription
     }
     
@@ -41,7 +39,7 @@ class DetailViewController: UIViewController {
         // Check if all fields are not empty
         if (nameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || surnameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || ageTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
             dniTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
-            jobTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || titleTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || descriptionTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "") {
+            jobTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" || descriptionTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "") {
             
             // Show error message
             Alert.showBasicAlert(on: self, with: "Error", message: "Some fields are empty.")
@@ -54,7 +52,6 @@ class DetailViewController: UIViewController {
             let age = ageTextField.text?.trimmingCharacters(in: .whitespaces)
             let dni = dniTextField.text?.trimmingCharacters(in: .whitespaces)
             let job = jobTextField.text?.trimmingCharacters(in: .whitespaces)
-            let title = titleTextField.text?.trimmingCharacters(in: .whitespaces)
             let description = descriptionTextField.text?.trimmingCharacters(in: .whitespaces)
             
             try! realm.write {
@@ -66,7 +63,6 @@ class DetailViewController: UIViewController {
                 user.age = Int(age!)!
                 user.dni = dni!
                 user.job = job!
-                user.title = title!
                 user.cvDescription = description!
                 
                 realm.add(user, update: .all)

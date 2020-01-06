@@ -82,7 +82,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="uqd-9y-RH8">
-                                <rect key="frame" x="20" y="108" width="374" height="458"/>
+                                <rect key="frame" x="20" y="108" width="374" height="568"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ijb-ry-gph">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="26.5"/>
@@ -121,16 +121,16 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hh4-2B-bGp">
-                                        <rect key="frame" x="0.0" y="368" width="374" height="35"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="No description available" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="Ic6-25-M7r">
+                                        <rect key="frame" x="0.0" y="368" width="374" height="200"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="tco-3y-Yua"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m83-hr-hbq">
-                                        <rect key="frame" x="0.0" y="423" width="374" height="35"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -151,17 +151,16 @@
                     </navigationItem>
                     <connections>
                         <outlet property="ageTextField" destination="mdo-EV-h7v" id="CaJ-RV-Ast"/>
-                        <outlet property="descriptionTextField" destination="m83-hr-hbq" id="aMp-y7-rVS"/>
+                        <outlet property="descriptionTextField" destination="Ic6-25-M7r" id="IUY-B6-m4i"/>
                         <outlet property="dniTextField" destination="tfn-Kg-hrq" id="LcX-3W-kV4"/>
                         <outlet property="jobTextField" destination="2Sz-jR-qdS" id="TS3-fw-1Rd"/>
                         <outlet property="nameTextField" destination="SXL-NB-Mzv" id="dMQ-k7-myn"/>
                         <outlet property="surnameTextField" destination="9J0-GE-nn4" id="VxI-Sl-jQc"/>
-                        <outlet property="titleTextField" destination="hh4-2B-bGp" id="agk-TO-HNg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n6m-g6-ksX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1921.7391304347827" y="641.51785714285711"/>
+            <point key="canvasLocation" x="1921.7391304347827" y="642.1875"/>
         </scene>
         <!--New user-->
         <scene sceneID="zM7-Xj-yFU">
@@ -172,7 +171,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Nn5-A7-3sF">
-                                <rect key="frame" x="20" y="108" width="374" height="458"/>
+                                <rect key="frame" x="20" y="108" width="374" height="568"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgE-4S-Cdl">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="26.5"/>
@@ -211,16 +210,16 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rmd-Hi-2Nw">
-                                        <rect key="frame" x="0.0" y="368" width="374" height="35"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="No description available" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="AwF-e2-qin">
+                                        <rect key="frame" x="0.0" y="368" width="374" height="200"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="x5o-dc-Skm"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3Vr-oy-8JT">
-                                        <rect key="frame" x="0.0" y="423" width="374" height="35"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -241,12 +240,11 @@
                     </navigationItem>
                     <connections>
                         <outlet property="ageTextField" destination="SU7-e2-grl" id="pcI-ZV-42O"/>
-                        <outlet property="descriptionTextField" destination="3Vr-oy-8JT" id="kam-Pu-w3b"/>
+                        <outlet property="descriptionTextField" destination="AwF-e2-qin" id="sMF-U5-PgQ"/>
                         <outlet property="dniTextField" destination="VDp-5E-piU" id="uXh-8A-It1"/>
                         <outlet property="jobTextField" destination="tN1-k7-mzq" id="8Zb-Zw-QZt"/>
                         <outlet property="nameTextField" destination="vVG-4T-Esb" id="mdf-bt-w0A"/>
                         <outlet property="surnameTextField" destination="YWl-7Y-aMp" id="KCQ-ua-hn3"/>
-                        <outlet property="titleTextField" destination="rmd-Hi-2Nw" id="xkt-lQ-O8D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YHx-jR-VBg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

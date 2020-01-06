@@ -10,15 +10,14 @@ import UIKit
 import RealmSwift
 
 class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     let model: MasterModel = MasterModel()
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
-        print(Realm.Configuration.defaultConfiguration.fileURL!)
         self.tableView.delegate = self
         self.tableView.dataSource = self        
     }
@@ -29,12 +28,9 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        if indexPath.row < model.getUsersCount() {
-            cell.textLabel?.text = model.getNameAndSurname(indexPath.row)
-            cell.detailTextLabel?.text = "Age: \(model.getAge(indexPath.row)) DNI: \(model.getDNI(indexPath.row))"
-        } else {
-            // Handle non-existing object here
-        }
+        cell.textLabel?.text = model.getNameAndSurname(indexPath.row)
+        cell.detailTextLabel?.text = "Age: \(model.getAge(indexPath.row)) DNI: \(model.getDNI(indexPath.row))"
+        
         
         return cell
     }
@@ -42,7 +38,7 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         return true
     }
-
+    
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         
         if(editingStyle == .delete) {
@@ -61,5 +57,5 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
             }
         }
     }
-
+    
 }
