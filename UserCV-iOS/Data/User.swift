@@ -17,6 +17,7 @@ class User: Object {
     @objc dynamic var job: String = ""
     @objc dynamic var id: Int = 0
     @objc dynamic var cvDescription: String = ""
+    @objc dynamic var rating: Int = 0
     
     override static func primaryKey() -> String? {
       return "id"

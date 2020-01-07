@@ -20,6 +20,12 @@ class MasterModel {
         return users.count
     }
     
+    // Get user's rating
+    func getRating(_ id: Int) -> Int {
+        let users = realm.objects(User.self)
+        return users[id].rating
+    }
+    
     // Get user
     func getUser(_ id: Int) -> User {
         let users = realm.objects(User.self)

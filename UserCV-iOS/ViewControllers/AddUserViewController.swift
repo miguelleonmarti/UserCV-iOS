@@ -26,6 +26,7 @@ class AddUserViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {self.view.endEditing(true)}
     
     @IBAction func doneTapped(_ sender: UIBarButtonItem) {
         // Check if all fields are not empty
@@ -57,6 +58,7 @@ class AddUserViewController: UIViewController {
                 user.job = job!
                 user.id = maxId
                 user.cvDescription = description!
+                user.rating = 0
                 
                 realm.add(user)
             }

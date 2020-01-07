@@ -16,10 +16,11 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.reloadData()
         
         // Do any additional setup after loading the view.
         self.tableView.delegate = self
-        self.tableView.dataSource = self        
+        self.tableView.dataSource = self
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -29,9 +30,12 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         cell.textLabel?.text = model.getNameAndSurname(indexPath.row)
-        cell.detailTextLabel?.text = "Age: \(model.getAge(indexPath.row)) DNI: \(model.getDNI(indexPath.row))"
-        
-        
+        var stars = ""
+        for i in 0...model.getRating(indexPath.row) where i>0 {
+            stars += "*"
+        }
+        cell.detailTextLabel?.text = "Rating: \(stars)"
+                        
         return cell
     }
     
@@ -58,4 +62,37 @@ class MasterViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
     
+}
+
+extension UIImage {
+    func load(url: URL) {
+        DispatchQueue.global().async { [weak self] in
+            if let data = try? Data(contentsOf: url) {
+                if let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        //self?.image = image
+                        self = image
+                    }
+                }
+            }
+        }
+    }
+}
+
+extension UIImageView {
+    func getData(from url: URL, completion: @escaping (Data?, URLResponse?, Error?) -> ()){
+        URLSession.shared.dataTask(with: url, completionHandler: completion).resume()
+    }
+    
+    func downloadImage(from url: URL) {
+        getData(from: url) {
+            data, response, error in
+            guard let data = data, error == nil else {
+                return
+            }
+            DispatchQueue.main.async {
+                self.image = UIImage(data: data)
+            }
+        }
+    }
 }
